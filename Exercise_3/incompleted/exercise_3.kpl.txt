@@ -1,0 +1,38 @@
+/*Viết chương trình KPL thực hiện:
+- khai báo một mang số nguyên gồm 10 phần tử 
+- Tìm phần thử lớn nhất của mảng.
+- Kiểm tra liệu các phần tử của mảng có phân biệt hay không.*/
+
+
+
+PROGRAM Week3; 
+var a: array (.10.) of integer;
+    i : integer;
+    min: integer;
+    temp: integer;
+    diff: integer;
+
+BEGIN
+(*1. Nhập vào một mảng 10 số nguyên *)
+	For i := 0 To 9 Do
+	Begin	
+      		a(.i.) := readI;
+    	End;
+(*2. Tìm phần tử nhỏ nhất và in ra màn hình*)
+    	min := a(.0.);
+	For i := 1 To 9 Do
+ 		 Begin
+   		 	If min >= a(.i.) then min := a(.i.);    
+  		 End;
+    	Call writeI(min);
+(*3. Kiểm tra xem các phần tử của mảng có khác nhau hay không. *)  	
+	temp := a(.0.);
+    	for i := 0 to 9 do    		
+    			if temp != a(.i.) then diff := 1;    			
+    	
+    	(* neu cac phan tu bang nhau thi tra ve 0, neu khong thi tra ve 1*)
+    	 	
+    	call writeln;
+    	call writei(diff);
+    	call writeln;
+END.;
