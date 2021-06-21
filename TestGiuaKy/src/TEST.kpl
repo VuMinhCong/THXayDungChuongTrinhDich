@@ -1,0 +1,45 @@
+Program TEST; (* Factorial *)
+   
+Var n : Integer;
+    str : String;
+    d : Double;
+    x : Integer;
+
+Function F(n : Integer) : Integer;
+  Begin
+    If n = 0 Then F := 1 Else F := N * F (N - 1);
+  End;
+
+Begin
+  str := "abc";
+  d := 1.2;
+
+  n, str, d, x := 1, "xyz", 2.3, 4;
+
+  (*str := 3;         (* Error : type inconsistency *)
+  (*d := 'c';         (* Error : type inconsistency *)
+
+  DO
+    BEGIN
+      x := 1;
+      d := 2.1;
+      str := "test";
+    END
+  WHILE x = 2;
+
+  DO x := 1 WHILE x = 2;
+
+  DO
+    BEGIN
+      WHILE x = 1 DO
+        WHILE x = 1 DO
+          x := 2;
+    END
+  WHILE x = 2;  (**)
+
+  For d := 1 To 7 Do
+    Begin
+      Call WriteLn;
+      Call WriteI( F(n));
+    End;
+End. (* Factorial *)
