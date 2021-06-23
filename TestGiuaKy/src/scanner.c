@@ -15,6 +15,15 @@
 #include "scanner.h"
 
 
+/*
+Phần thêm string:
+  -Thêm hàm readString()
+  -Thêm case CHAR_DOUBLEQUOTE trong getToken()
+  -Thêm case TK_STRING và KW_STRING vào hàm printToken()
+Phần thêm Double:
+  -extern biến previousChar
+  -Thêm case TK_DOUBLE và KW_DOUBLE và printToken()
+*/
 extern int lineNo;
 extern int colNo;
 extern int currentChar;

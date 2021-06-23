@@ -12,6 +12,12 @@
 
 #include <stdio.h>
 
+/*
+Phần thêm String:
+  -Thêm checkStringType()
+Phần thêm Double:
+  -Thêm checkDoubleType()
+*/
 extern SymTab* symtab;
 extern Token* currentToken;
 

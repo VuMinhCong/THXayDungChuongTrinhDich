@@ -10,6 +10,14 @@
 
 #define NUM_OF_ERRORS 31
 
+
+/*
+Phần thêm string:
+  -Thêm error : ERR_NO_ENDED_STRING
+Phần thêm lệnh gán nhiều biến:
+  -Thêm ERR_ELEMENTS_COUNT_INCONSISTENCY
+*/
+
 struct ErrorMessage {
   ErrorCode errorCode;
   char *message;

@@ -10,6 +10,16 @@
 #include "symtab.h"
 #include "error.h"
 
+/*
+Phần thêm String:
+  -Thêm hàm makeStringConstant(char*) và makeStringType()
+  -Bổ sung một số chỗ free, tạo thêm một vài biến khác (ví dụ biến stringType)
+Phần thêm Double:
+  -Thêm hàm makeDoubleConstant(char*) và makeDoubleType()
+  -Sửa hàm compareType() trong symtab.c : Nếu vế phải double, vế trái int -> không báo lỗi.
+  -Bổ sung một số chỗ free, tạo biến khác (ví dụ biến doubleType)
+*/
+
 void freeObject(Object* obj);
 void freeScope(Scope* scope);
 void freeObjectList(ObjectNode *objList);

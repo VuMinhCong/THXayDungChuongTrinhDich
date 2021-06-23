@@ -7,6 +7,12 @@
 #include <stdio.h>
 #include "debug.h"
 
+/*
+Phần thêm String:
+  -Thêm case TP_STRING vào hàm printType()
+Phần thêm Double:
+  -Thêm case TP_DOUBLE vào hàm printType()
+*/
 void pad(int n) {
   int i;
   for (i = 0; i < n ; i++) printf(" ");

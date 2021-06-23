@@ -8,6 +8,14 @@
 #define __ERROR_H__
 #include "token.h"
 
+
+/*
+Phần thêm string:
+  -Thêm error : ERR_NO_ENDED_STRING
+Phần thêm lệnh gán nhiều biến:
+  -Thêm ERR_ELEMENTS_COUNT_INCONSISTENCY
+*/
+
 typedef enum {
   ERR_END_OF_COMMENT,
   ERR_NO_ENDED_STRING,

@@ -13,6 +13,25 @@
 #include "error.h"
 #include "debug.h"
 
+/*
+Phần thêm String:
+  -Thêm case TK_STRING vào hàm compileUnsignedConstant(Void)
+  -Thêm case TK_STRING vào compileConstant() và compileFactor()
+  -Thêm case KW_STRING vào compileType() và compileBasicType()
+Phần thêm Double:
+  -Thêm case TK_DOUBLE vào hàm compileUnsignedConstant()
+  -Thêm case TK_DOUBLE vào compileConstant() và compileFactor()
+  -Thêm case KW_DOUBLE vào compileType() và compileBasicType()
+Phần thêm Do-While:
+  -Thêm hàm compileDoWhileSt()
+  -Thêm case KW_DO vào hàm compileStatement()
+  -Thêm case KW_WHILE vào các hàm : compileExpression3()và compileTerm2() 
+  Mục đích để thêm KW_WHILE vào danh sách follow của Expression và Term
+
+Phần thêm lệnh gán đồng thời nhiều biến:
+  -Sửa hàm compileAssignSt()
+  -Thêm hàm compileGroupAssignSt()
+*/
 #define MAX_IDENT_COUNT 15
 
 Token *currentToken;
